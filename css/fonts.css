@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'SpectralSC-Bold';
+    src: url('../fonts/SpectralSC-Bold/SpectralSC-Bold.eot');
+    src: url('../fonts/SpectralSC-Bold/SpectralSC-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SpectralSC-Bold/SpectralSC-Bold.woff2') format('woff2'),
+        url('../fonts/SpectralSC-Bold/SpectralSC-Bold.woff') format('woff'),
+        url('../fonts/SpectralSC-Bold/SpectralSC-Bold.ttf') format('truetype'),
+        url('../fonts/SpectralSC-Bold/SpectralSC-Bold.svg#SpectralSC-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
