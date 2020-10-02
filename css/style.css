@@ -51,7 +51,7 @@ a {
 }
 
 /*header*/
-.bg__header {
+.bg-header {
   background: url("../img/bg-header.jpg") no-repeat center/cover;
   width: 100%;
   height: 100vh;
@@ -431,7 +431,7 @@ a {
 
 /*page*/
 
-.bg__header-page {
+.bg-header-page {
   background: url("../img/bg-header_st.jpg") no-repeat center/cover;
   width: 100%;
   height: 100vh;
