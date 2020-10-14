@@ -553,10 +553,6 @@ a {
   text-decoration: underline;
 }
 
-.page__link:hover .arrow {
-  /* fill: #d7d1c9; */
-}
-
 /*comments*/
 .comments__block {
   max-width: 793px;
