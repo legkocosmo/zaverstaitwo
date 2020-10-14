@@ -29,4 +29,3 @@ commentForm.onsubmit = function (evt) {
 
 };
 
-
