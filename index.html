@@ -45,7 +45,7 @@
       <div class="container">
         <div class="articles__block">
           <h2 class="title">Все статьи</h2>
-          <select name="topics" id="topics" class="articles__topic">
+          <select name="topics" id="topics" class="articles__topic filter">
             <option value="all">Выбрать тему</option>
             <option value="city">Город</option>
             <option value="books">Книги</option>
@@ -56,7 +56,7 @@
         </div>
         <!-- /.articles__block -->
         <ul class="cards">
-          <li class="card">
+          <li class="card" data-category="travels">
             <div class="figure__block">
               <img src="img/img1.jpg" width="387" height="268" alt="Путешествие в Берлин в августе">
             </div>
@@ -67,7 +67,7 @@
               <time datetime="2020-09-29">29.09.2020</time>
             </div>
           </li>
-          <li class="card">
+          <li class="card" data-category="city">
             <div class="figure__block">
               <img src="img/img2.jpg" width="387" height="268" alt="Где выпить колдбрю в Москве">
             </div>
@@ -79,7 +79,7 @@
               <time datetime="2020-07-24">24.07.2020</time>
             </div>
           </li>
-          <li class="card">
+          <li class="card" data-category="books">
             <div class="figure__block">
               <img src="img/img3.jpg" width="387" height="268" alt="Прочитано: книжные рекомендации">
             </div>
@@ -90,7 +90,7 @@
               <time datetime="2020-07-15">15.07.2020</time>
             </div>
           </li>
-          <li class="card card-big card-big1">
+          <li class="card card-big card-big1" data-category="photos">
             <!-- <div class="figure__block">
               <img src="img/img1-big.jpg" width="590" height="550" alt="Снимки на плёнку">
             </div> -->
@@ -102,7 +102,7 @@
               <time datetime="2020-06-29">29.06.2020</time>
             </div>
           </li>
-          <li class="card card-big card-big2">
+          <li class="card card-big card-big2" data-category="recipes">
             <!-- <div class="figure__block">
               <img src="img/img2-big.jpg" width="590" height="550" alt="Домашний чизкейк">
             </div> -->
@@ -193,23 +193,23 @@
       <div class="container">
         <h2 class="title">Написать мне</h2>
         <div class="form__block-w">
-          <form action="#" class="form__block">
+          <form action="#" class="form__block comment-form">
             <div class="form__input">
               <div class="input__block">
                 <label for="user" class="label__text">Ваше имя</label>
-                <input type="text" class="input__text" name="user" id="user" placeholder="Иван Иванов" required>
+                <input type="text" class="input__text input-text" name="user" id="user" placeholder="Иван Иванов" required>
               </div>
               <div class="input__block">
                 <label for="email" class="label__text">Email</label>
-                <input type="email" class="input__text" name="email" id="email" placeholder="google@gmail.com" required>
+                <input type="email" class="input__text input-text" name="email" id="email" placeholder="google@gmail.com" required>
               </div>
             </div>
             <div class="texterea__block">
               <label for="message" class="label__text">Сообщение</label>
-              <textarea name="message" class="texterea__message" id="message" rows="10" minlength="10" maxlength="200"
+              <textarea name="message" class="texterea__message texterea__input" id="message" rows="10"
                 placeholder="Напишите здесь ваше сообщение."></textarea>
             </div>
-            <input type="submit" value="Отправить" class="btn-show submit__btn-show">
+            <input type="submit" value="Отправить" class="btn-show submit__btn-show submit__btn">
           </form>
         </div>
         <!-- /.form__block-w -->
@@ -236,7 +236,8 @@
       </ul>
     </div>
   </footer>
-
+  <script src="js/filter.js"></script>
+  <script src="js/message.js"></script>
 </body>
 
 </html>
