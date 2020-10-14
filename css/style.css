@@ -221,6 +221,10 @@ a {
   color: #ffffff;
 }
 
+.hidden {
+  display: none;
+}
+
 /*about*/
 .about {
   padding: 40px 0;
@@ -240,7 +244,6 @@ a {
 
 .about__block {
   display: flex;
-  /* justify-content: space-between; */
   flex-wrap: wrap;
 }
 
@@ -300,7 +303,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
   border-radius: 10px;
   overflow: hidden;
   filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
@@ -345,7 +347,6 @@ a {
 .form__block {
   max-width: 1000px;
   width: 100%;
-  /* height: 637px; */
   margin: auto;
   background: url("../img/bg-form.jpg") no-repeat center/cover;
   border-radius: 10px;
@@ -382,7 +383,6 @@ a {
   border-radius: 10px;
   color: #202117;
   padding: 20px;
-  /* margin-left: auto; */
   margin-right: 20px;
 }
 
@@ -401,10 +401,22 @@ a {
   padding: 20px;
 }
 
+.texterea__input.warning {
+  color: red;
+}
+
 .submit__btn-show {
   text-transform: uppercase;
   margin-top: 30px;
 }
+
+.submit__btn:disabled {
+  background-color: #202117;
+  color: #ffffff;
+  opacity: 0.25;
+  cursor: no-drop;
+}
+
 
 /*footer*/
 .footer {
@@ -471,11 +483,12 @@ a {
 .page__social {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 35px;
 }
 
 .page__social--right {
   display: flex;
-  margin-bottom: 35px;
 }
 
 .page__social--item {
@@ -493,7 +506,22 @@ a {
 }
 
 .page__social--item:hover .page__social--img {
-  fill: #d7d1c9;
+  fill: #c1a684;
+}
+
+.page__social--right .page__social--item:hover:nth-child(1) .page__social--img {
+  /* fill: #d7d1c9; */
+  fill: #0fb4e3;
+}
+
+.page__social--item:hover:nth-child(2) .page__social--img {
+  /* fill: #d7d1c9; */
+  fill: #2547ba;
+}
+
+.page__social--item:hover:nth-child(3) .page__social--img {
+  /* fill: #d7d1c9; */
+  fill: #73bace;
 }
 
 .page__link a {
@@ -509,12 +537,24 @@ a {
   height: 20px;
 }
 
+.btn, .btn:focus {
+  border: 0;
+  outline: 1px solid #ffffff;
+  background: transparent;
+  cursor: pointer;
+}
+
+.like.added .page__social--img {
+  fill: green;
+}
+
 .page__link:hover a {
-  color: #d7d1c9;
+  /* color: #d7d1c9; */
+  text-decoration: underline;
 }
 
 .page__link:hover .arrow {
-  fill: #d7d1c9;
+  /* fill: #d7d1c9; */
 }
 
 /*comments*/
@@ -571,8 +611,6 @@ a {
 
 .comment__left {
   width: 300px;
-  /* margin: auto;
-  text-align: center; */
   float: left;
 }
 

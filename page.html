@@ -86,16 +86,16 @@
             стране. И это можно использовать в различных сферах жизни.</p>
 
           <div class="page__social">
-            <ul>
-              <li class="page__social--item">
-                <a href="#">
-                  <svg class="page__social--img">
-                    <use xlink:href="img/sprite.svg#like"></use>
-                  </svg>
-                </a>
-                <span>16</span>
-              </li>
-            </ul>
+            <!-- <ul> -->
+            <button type="button" class="btn page__social--item like">
+              <!-- <a href="#"> -->
+              <svg class="page__social--img">
+                <use xlink:href="img/sprite.svg#like"></use>
+              </svg>
+              <!-- </a> -->
+              <span class="likes-number">16</span>
+            </button>
+            <!-- </ul> -->
 
             <ul class="page__social--right">
               <li class="page__social--item">
@@ -137,7 +137,7 @@
       <div class="container">
         <div class="comments__block">
           <div class="comments__body">
-            <ul>
+            <ul  class="comment-list">
               <li class="user__item">
                 <div class="user__block">
                   <div class="user__img">
@@ -145,7 +145,7 @@
                   </div>
                   <p class="user__name">Иван Петров</p>
                 </div>
-                <p>Отличная статья! Спасибо.</p>
+                <p class="user-comment">Отличная статья! Спасибо.</p>
               </li>
               <li class="user__item">
                 <div class="user__block">
@@ -154,7 +154,7 @@
                   </div>
                   <p class="user__name">Ксения Ксения</p>
                 </div>
-                <p>Отличный текст, добавила в закладки.</p>
+                <p class="user-comment">Отличный текст, добавила в закладки.</p>
               </li>
               <li class="user__item">
                 <div class="user__block">
@@ -163,30 +163,30 @@
                   </div>
                   <p class="user__name">Иван Иванов</p>
                 </div>
-                <p>Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
+                <p class="user-comment">Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
               </li>
             </ul>
           </div>
           <!-- /.comments__body -->
           <div class="comments__form">
             <h2 class="comments__title">Оставить комментарий</h2>
-            <form action="#">
+            <form action="#" class="comment-form">
               <div class="comment__center">
                 <div class="comment__left">
                   <div class="comment__block">
                     <label for="user" class="comment__label">Имя</label>
-                    <input type="text" class="comment__input" name="user" id="user" placeholder="" required>
+                    <input type="text" class="comment__input input-text" name="user" id="user" placeholder="" required>
                   </div>
                   <div class="comment__block">
                     <label for="email" class="comment__label">Почта</label>
-                    <input type="email" class="comment__input" name="email" id="email" placeholder="" required>
+                    <input type="email" class="comment__input input-text" name="email" id="email" placeholder="" required>
                   </div>
                 </div>
                 <div class="comment__texterea">
-                  <textarea name="message" class="comment__message" id="message" minlength="10" maxlength="200"
+                  <textarea name="message" class="comment__message texterea__input" id="message"
                     placeholder="Написать комментарий..."></textarea>
                 </div>
-                <input type="submit" value="Отправить" class="btn-show submit__btn-show">
+                <input type="submit" value="Отправить" class="btn-show submit__btn-show submit__btn">
               </div>
             </form>
           </div>
@@ -216,7 +216,8 @@
       </ul>
     </div>
   </footer>
-
+  <script src="js/like.js"></script>
+  <script src="js/message.js"></script>
 </body>
 
 </html>
